@@ -9,7 +9,7 @@ package shoreline.proto;
 
 option java_package = "com.shoreline.proto";
 
-import "CoordinatesProto.proto";
+import "Coordinates.proto";
 
 /**
  * The protobuf definition for the Landmark class. Landmarks are used by the BuildingMap protobufs 
@@ -32,4 +32,6 @@ message Landmark {
 	LandmarkType type = 3;
 	/* Particles used to define an accessible area close to the landmark. */
 	repeated Coordinates particles = 4;
+	/* a short description of the landmark */
+	string description = 5;
 }

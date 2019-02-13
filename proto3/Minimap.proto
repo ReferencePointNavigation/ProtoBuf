@@ -8,8 +8,8 @@ package shoreline.proto;
 
 option java_package = "com.shoreline.proto";
 
-import "CoordinatesProto.proto";
-import "LandmarkProto.proto";
+import "Coordinates.proto";
+import "Landmark.proto";
 
 /**
  * The protobuf definition for the Minimap class. Minimaps are used in the Floor protobuf class
@@ -24,7 +24,6 @@ message Minimap {
 	int32 columns = 3;
 	// The minimap's minimum coordinates. */
 	Coordinates minCoordinates = 4;
-	
 
     /**
      * The tiles used in minimap that a hold landmark information for a discreet amount of space.

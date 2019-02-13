@@ -7,8 +7,8 @@ package shoreline.proto;
 
 option java_package = "com.shoreline.proto";
 
-import "FloorProto.proto";
-import "CoordinatesProto.proto";
+import "Floor.proto";
+import "Coordinates.proto";
 
 /**
  * The protobuf definition for the BuildingMap class.

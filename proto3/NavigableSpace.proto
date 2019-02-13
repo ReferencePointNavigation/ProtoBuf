@@ -8,7 +8,7 @@ package shoreline.proto;
 
 option java_package = "com.shoreline.proto";
 
-import "CoordinatesProto.proto";
+import "Coordinates.proto";
 
 /**
  * The protobuf that defines the NavigableSpace class.

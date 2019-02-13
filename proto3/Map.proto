@@ -1,0 +1,24 @@
+/**
+ * Holds the protobuf for the map class.
+ */
+
+syntax = "proto3";
+
+package shoreline.proto;
+
+option java_package = "com.shoreline.proto";
+
+import "BuildingMap.proto";
+
+message Map {
+    /* The map's minimum coordinates. */
+    Coordinates minCoordinates = 1;
+    /* The map's maximum coordinates. */
+    Coordinates maxCoordinates = 2;
+    /* the name of the map */
+    string name = 3;
+    /* a brief description of the map */
+    string description = 4;
+    /* the set of buildings contained in the map */
+    repeated BuildingMap buildings = 5;
+}

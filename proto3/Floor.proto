@@ -8,9 +8,9 @@ package shoreline.proto;
 
 option java_package = "com.shoreline.proto";
 
-import "LandmarkProto.proto";
-import "NavigableSpaceProto.proto";
-import "MinimapProto.proto";
+import "Landmark.proto";
+import "NavigableSpace.proto";
+import "Minimap.proto";
 
 
 /**
