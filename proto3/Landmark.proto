@@ -5,9 +5,9 @@
 
 syntax = "proto3";
 
-package shoreline.proto;
+package referencepoint.proto;
 
-option java_package = "com.shoreline.proto";
+option java_package = "com.referencepoint.proto";
 
 import "Coordinates.proto";
 
@@ -23,10 +23,11 @@ message Landmark {
 
 	/* The different types landmarks. */
  	enum LandmarkType {
- 	  DOOR = 1;
- 	  HALLWAY_INTERSECTION = 2;
- 	  STAIRS = 3;
- 	  ELEVATOR = 4;
+		UNKNOWN = 0;
+		DOOR = 1;
+		HALLWAY_INTERSECTION = 2;
+		STAIRS = 3;
+		ELEVATOR = 4;
     }
 	/* The object the landmark represents (see LandmarkType enum) */
 	LandmarkType type = 3;

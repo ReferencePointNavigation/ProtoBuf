@@ -4,9 +4,9 @@
 
 syntax = "proto3";
 
-package shoreline.proto;
+package referencepoint.proto;
 
-option java_package = "com.shoreline.proto";
+option java_package = "com.referencepoint.proto";
 
 /**
  * The protobuf for the Coordinates class used to define points in the map.
