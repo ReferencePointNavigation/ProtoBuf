@@ -1,0 +1,25 @@
+/**
+ * Stores the protobuf definition for the BuildingMap class.
+ */
+syntax = "proto3";
+
+package shoreline.proto;
+
+option java_package = "com.shoreline.proto";
+
+import "FloorProto.proto";
+import "CoordinatesProto.proto";
+
+/**
+ * The protobuf definition for the BuildingMap class.
+ */
+message BuildingMap {
+  /* The map's minimum coordinates. */
+  Coordinates minCoordinates = 1;
+  /* The map's maximum coordinates. */
+  Coordinates maxCoordinates = 2;
+  /* The building's name. */
+  string name = 3;
+  /* An array of the floors of this building. */
+  repeated Floor floors = 4;
+}
