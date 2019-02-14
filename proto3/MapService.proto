@@ -14,5 +14,5 @@ import "Coordinates.proto";
 service MapService {
 
     rpc ListMaps(Coordinates) returns (stream Map) {}
-    
+
 }
