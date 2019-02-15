@@ -9,6 +9,7 @@ package referencepoint.proto;
 option java_package = "com.referencepoint.proto";
 
 import "BuildingMap.proto";
+import "Coordinates.proto";
 
 message Map {
     /* The map's minimum coordinates. */
