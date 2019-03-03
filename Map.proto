@@ -21,5 +21,5 @@ message Map {
     /* a brief description of the map */
     string description = 4;
     /* the set of buildings contained in the map */
-    repeated BuildingMap buildings = 5;
+    repeated Building buildings = 5;
 }
