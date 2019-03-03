@@ -1,6 +1,3 @@
-/**
- * Stores the protobuf definition for the BuildingMap class.
- */
 syntax = "proto3";
 
 package referencepoint.proto;
@@ -11,9 +8,9 @@ import "Floor.proto";
 import "Coordinates.proto";
 
 /**
- * The protobuf definition for the BuildingMap class.
+ * Represents a physical enclosed structure with navigable spaces.
  */
-message BuildingMap {
+message Building {
   /* The map's minimum coordinates. */
   Coordinates minCoordinates = 1;
   /* The map's maximum coordinates. */
