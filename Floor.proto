@@ -12,17 +12,16 @@ import "Landmark.proto";
 import "NavigableSpace.proto";
 import "Minimap.proto";
 
-
 /**
  * The protobuf definition for the Floor class.
  */
 message Floor {
-  /* The floor's number. */
-  int32 number = 1;
-  /* This floor's landmarks. */
-  repeated Landmark landmarks = 2;
-  /* The navigable spaces of this floor. */
-  repeated NavigableSpace navigableSpaces = 3;
-  /* The minimap representing the navigability of this floor. */
-  Minimap minimap = 4;
+    /* The floor's number. */
+    int32 number = 1;
+    /* This floor's landmarks. */
+    repeated Landmark landmarks = 2;
+    /* The navigable spaces of this floor. */
+    repeated NavigableSpace navigableSpaces = 3;
+    /* The minimap representing the navigability of this floor. */
+    Minimap minimap = 4;
 }
