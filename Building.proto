@@ -11,12 +11,10 @@ import "Coordinates.proto";
  * Represents a physical enclosed structure with navigable spaces.
  */
 message Building {
-  /* The map's minimum coordinates. */
-  Coordinates minCoordinates = 1;
-  /* The map's maximum coordinates. */
-  Coordinates maxCoordinates = 2;
-  /* The building's name. */
-  string name = 3;
-  /* An array of the floors of this building. */
-  repeated Floor floors = 4;
+    /* The building's boundary */
+    repeated Coordinates boundary = 1;
+    /* The building's name. */
+    string name = 2;
+    /* An array of the floors of this building. */
+    repeated Floor floors = 3;
 }
