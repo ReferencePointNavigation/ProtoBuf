@@ -1,0 +1,60 @@
+// Copyright 2019 Reference Point Navigation
+// @author: Chris Daley
+syntax = "proto3";
+
+package referencepoint.telemetry.proto;
+
+option java_package = "com.referencepoint.telemetry.proto";
+
+import "Route.proto";
+
+// The Telemetry service captures telemetry data from debug clients
+service Telemetry {
+
+    rpc RecordRoute (referencepoint.proto.Route) returns (UUID) {
+    }
+
+    rpc RecordData (stream TelemetryData) returns (TelemetrySummary) {
+    }
+
+}
+
+message TelemetryData {
+
+    UUID route_id = 1;
+
+    int64 time = 2;
+
+    double mean_x = 3;
+
+    double mean_y = 4;
+
+    repeated Filter particles = 5;
+
+    message Filter {
+
+        double step = 1;
+
+        double mean_x = 2;
+
+        double mean_y = 3;
+
+        double cov_x = 4;
+
+        double cov_xy = 6;
+
+        double cov_y = 5;
+    }
+
+}
+
+message UUID {
+    string id = 1;
+}
+
+message TelemetrySummary {
+
+    int32 data_count = 1;
+
+    int32 elapsed_time = 2;
+}
