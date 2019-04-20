@@ -2,7 +2,7 @@
 // @author: Chris Daley
 syntax = "proto3";
 
-package referencepoint.telemetry.proto;
+package referencepoint.proto;
 
 option java_package = "com.referencepoint.telemetry.proto";
 
@@ -11,7 +11,7 @@ import "Route.proto";
 // The Telemetry service captures telemetry data from debug clients
 service Telemetry {
 
-    rpc RecordRoute (referencepoint.proto.Route) returns (UUID) {
+    rpc RecordRoute (Route) returns (UUID) {
     }
 
     rpc RecordData (stream TelemetryData) returns (TelemetrySummary) {
