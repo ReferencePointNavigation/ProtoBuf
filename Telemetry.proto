@@ -5,7 +5,6 @@ syntax = "proto3";
 package referencepoint.proto;
 
 option java_package = "com.referencepoint.telemetry.proto";
-option go_package = "github.com/ReferencePointNavigation/telemetry/telemetry";
 
 import "Route.proto";
 
@@ -31,6 +30,14 @@ message TelemetryData {
     double mean_y = 4;
 
     repeated Filter particles = 5;
+
+    FilterType filter_type = 6;
+
+    enum FilterType {
+        UNKNOWN = 0;
+        PARTICLE = 1;
+        KALMAN = 2;
+    }
 
     message Filter {
 
