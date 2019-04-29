@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package referencepoint.proto;
+
+option java_package = "com.referencepoint.proto";
+
+import "Coordinates.proto";
+
+message Polygon {
+
+    repeated Coordinates vertices = 1;
+
+}
