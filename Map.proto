@@ -8,7 +8,6 @@ package referencepoint.proto;
 
 option java_package = "com.referencepoint.proto";
 
-import "Building.proto";
 import "Coordinates.proto";
 import "Polygon.proto";
 import "Path.proto";
