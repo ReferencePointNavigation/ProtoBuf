@@ -8,6 +8,7 @@ syntax = "proto3";
 package referencepoint.proto;
 
 option java_package = "com.referencepoint.proto";
+option java_outer_classname = "LandmarkProto";
 
 import "Coordinates.proto";
 
